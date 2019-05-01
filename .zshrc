@@ -91,3 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+eval $(thefuck --alias)
+alias zshconfig="vim ~/.zshrc"
+alias zshcompile="source ~/.zshrc"

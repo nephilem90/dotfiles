@@ -7,6 +7,8 @@ sudo apt-get install gnome-tweak-tool
 
 echo "INSTALLAZIONE VIM"
 sudo apt-get install vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 echo "INSTALLAZIONE VSCODE"
 sudo apt updatesudo apt install software-properties-common apt-transport-https wget
@@ -30,3 +32,22 @@ sudo apt-get install powerline fonts-powerline
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 cp .zshrc ~/.zshrc
 source ~/.zshrc
+
+echo "INSTALLO CURL"
+sudo apt-get install curl
+
+echo "INSTALLO PYTHON 3"
+sudo apt install python3-dev python3-pip python3-setuptools
+
+echo "INSTALLO COMANDO FUCK"
+sudo pip3 install thefuck
+
+echo "INSTALLO NODE"
+sudo apt install nodejs npm
+
+echo "INSTALLO HOW2"
+npm install -g how-2
+
+echo "INSTALLO VUE-CLI"
+npm install -g @vue/cli
+
