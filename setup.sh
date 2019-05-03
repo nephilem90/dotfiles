@@ -2,13 +2,19 @@
 
 sudo apt update
 
+
 echo "INSTALLAZIONE GESTORE ASPETTO GNOME"
 sudo apt-get install gnome-tweak-tool
 
 echo "INSTALLAZIONE VIM"
+sudo figlet install
 sudo apt-get install vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+cp -rf $PWD/.vimrc ~/.vimrc
+cp -rf colors/ ~/.vim/colors
+vim -c 'PluginInstall' -c 'qa!'
 
 echo "INSTALLAZIONE VSCODE"
 sudo apt updatesudo apt install software-properties-common apt-transport-https wget
@@ -45,9 +51,9 @@ sudo pip3 install thefuck
 echo "INSTALLO NODE"
 sudo apt install nodejs npm
 
-echo "INSTALLO HOW2"
-npm install -g how-2
-
-echo "INSTALLO VUE-CLI"
-npm install -g @vue/cli
-
+echo "installazione terminata"
+echo ""
+echo ""
+echo "mancano ancora alcune componenti, ma è necessarrio riavviare il pc"
+echo "dopo il riavvio lanciare:"
+echo "./after-reboot.sh"
