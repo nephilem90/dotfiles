@@ -44,6 +44,7 @@ sudo apt-get install curl
 
 echo "INSTALLO PYTHON 3"
 sudo apt install python3-dev python3-pip python3-setuptools
+sudo pip3 install virtualenv
 
 echo "INSTALLO COMANDO FUCK"
 sudo pip3 install thefuck
@@ -57,3 +58,4 @@ echo ""
 echo "mancano ancora alcune componenti, ma è necessarrio riavviare il pc"
 echo "dopo il riavvio lanciare:"
 echo "./after-reboot.sh"
+
