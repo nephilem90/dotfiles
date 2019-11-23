@@ -52,6 +52,30 @@ sudo pip3 install thefuck
 echo "INSTALLO NODE"
 sudo apt install nodejs npm
 
+
+echo "INSTALLO COMANDI MOUSE"
+sudo apt-get install libdaemon-dev libglade2-dev libgtk2.0-dev
+git clone git@github.com:nephilem90/btnx.git
+cd btnx
+./configure
+make
+sudo make install
+cd ..
+git@github.com:nephilem90/btnx-config.git
+cd btnx-config
+./configure
+make
+sudo make install
+cd ..
+rm -rf btnx-config
+rm -rf btnx
+echo ""
+echo ""
+echo "fai il restore di tecknet.gz e riavvia il demone"
+echo ""
+sudo btnx-config
+
+
 echo "installazione terminata"
 echo ""
 echo ""
